@@ -22,6 +22,8 @@
   padding: 10px;
   background-color: #f8f8f8 !important;
   overscroll-behavior-y: contain;
+  height: 100%;
+  max-height: calc(100% - 92px);
 }
 
 .messageInner {
@@ -37,4 +39,70 @@
   margin: 10px auto;
   padding: 3px 10px;
   border-radius: 10px;
+  font-size: 14px;
+}
+
+/**Message Container Stylings**/
+
+.messageContainer {
+  display: flex;
+  padding: 0;
+  color: #363636;
+  line-height: 16px;
+}
+
+.messageContainer:last-child {
+  margin-bottom: 16px;
+}
+
+.botThumbnailLeft {
+  margin-right: 10px;
+}
+.botThumbnailLeft {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex: 25%;
+}
+
+.image {
+  display: block;
+  position: relative;
+}
+
+.botIcon {
+  border: none !important;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 0% !important;
+}
+
+.messageBoxRightContainer {
+  padding: 4px 0 0 10px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  text-align: left;
+}
+
+.messageBoxContainerContent {
+  background: #fff !important;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+  box-shadow: none;
+  display: inline-block;
+  color: #4a4a4a;
+  font-size: 14px;
+}
+
+.messageBoxContainerContent:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 7px 8px 7px 0;
+  display: flex;
+  width: 0;
+  top: 10px;
+  border-color: rgba(0, 0, 0, 0) #f8f8f8;
+  z-index: 1;
+  left: -8px;
 }
