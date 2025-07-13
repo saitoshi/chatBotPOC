@@ -1,0 +1,15 @@
+.chatBotHeader {
+  top: 0 !important;
+  left: 0 !important;
+  transform: none !important;
+  background-color: #13448f;
+}
+.chatBotInner {
+  padding: 10px;
+}
+.chatBotHeaderTitle {
+  font-size: 18px;
+  color: #fff;
+  text-align: left !important;
+  font-weight: bold;
+}
