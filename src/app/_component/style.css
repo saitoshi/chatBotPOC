@@ -92,6 +92,7 @@
   display: inline-block;
   color: #4a4a4a;
   font-size: 14px;
+  line-height: 20px;
 }
 
 .messageBoxContainerContent:after {
@@ -105,8 +106,34 @@
   border-color: rgba(0, 0, 0, 0) #f8f8f8;
   z-index: 1;
   left: -8px;
+  border-right-color: #fff !important;
 }
 
+.userMessageContent {
+  background: #13448f;
+  color: #ffffff;
+  padding: 8px 12px;
+  position: relative;
+  margin-left: auto;
+  max-width: 90%;
+  float: right;
+  box-shadow: none;
+
+}
+
+.userMessageContent:after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 7px 0 7px 8px;
+  display: block;
+  width: 0;
+  top: 9px;
+  border-color: rgba(0, 0, 0, 0) #fff;
+  z-index: 1;
+  right: -8px;
+  border-left-color: #13448f !important;
+}
 /**Input Area**/
 #inputAreaBox {
   display: flex;
@@ -115,13 +142,16 @@
 }
 
 .inputAreaBox {
-  flex: 85%;
+  flex: 80%;
   background-color: white;
   padding: 14px 8px 0;
 }
 
+.clipItemButton, 
 .sendInputMessage {
-  flex: 15%;
+  flex: 10%;
+}
+.sendInputMessage {
   background-color: #0086d9;
   color: white;
   font-size: 18px;

@@ -3,6 +3,9 @@ import './style.css';
 export const InputArea = () => {
     return (
         <div id='inputAreaBox'>
+            <button className='clipItemButton'>
+            <i className="fa fa-paperclip"></i>
+            </button>
             <textarea className='inputAreaBox' placeholder='質問入力/Start Typing'>
 
             </textarea>
