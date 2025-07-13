@@ -13,3 +13,28 @@
   text-align: left !important;
   font-weight: bold;
 }
+
+/**Stylings For The ChatBot Message Area**/
+#chatBotBody {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+  padding: 10px;
+  background-color: #f8f8f8 !important;
+  overscroll-behavior-y: contain;
+}
+
+.messageInner {
+  width: 100%;
+  min-height: calc(100% + 1px);
+  padding-bottom: 26px;
+}
+
+.messageDate {
+  color: #333 !important;
+  background: #fff;
+  display: table;
+  margin: 10px auto;
+  padding: 3px 10px;
+  border-radius: 10px;
+}
