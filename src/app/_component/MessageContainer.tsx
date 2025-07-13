@@ -2,7 +2,8 @@ import './style.css';
 
 export const MessageContainer = () => {
     return (
-        <div className='messageContainer'>
+        <div id='chatBotBody'>
+ <div className='messageContainer'>
             <div className='botThumbnailLeft'>
                 <p className='image'>
                     <img className='botIcon' src={"https://image.ana.bedore.jp/6c2c0ad8-1f00-4bfb-aaf…2473002f/7678ef91-44f0-46a9-88b3-9e82f6cb2d3d.png"}/>
@@ -19,8 +20,9 @@ export const MessageContainer = () => {
                     <p>（You can only select the button once.）</p>
                 </span>
             </div>
-   
-            
+            </div>
         </div>
+    
+    
     )
 }

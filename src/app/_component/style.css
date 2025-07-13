@@ -5,7 +5,7 @@
   background-color: #13448f;
 }
 .chatBotInner {
-  padding: 10px;
+  padding: 10px 10px 10px 10px;
 }
 .chatBotHeaderTitle {
   font-size: 18px;
@@ -19,7 +19,7 @@
   overflow-x: hidden;
   overflow-y: scroll;
   position: relative;
-  padding: 10px;
+  padding: 10px 10px 0 10px;
   background-color: #f8f8f8 !important;
   overscroll-behavior-y: contain;
   height: 100%;
@@ -105,4 +105,24 @@
   border-color: rgba(0, 0, 0, 0) #f8f8f8;
   z-index: 1;
   left: -8px;
+}
+
+/**Input Area**/
+#inputAreaBox {
+  display: flex;
+
+  border-top: solid 2px #ddd;
+}
+
+.inputAreaBox {
+  flex: 85%;
+  background-color: white;
+  padding: 14px 8px 0;
+}
+
+.sendInputMessage {
+  flex: 15%;
+  background-color: #0086d9;
+  color: white;
+  font-size: 18px;
 }
